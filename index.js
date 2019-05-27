@@ -6,7 +6,6 @@ const request = require('request');
 //Accepting params   
 const city = process.argv.slice(2).join(' ');
 
-let days  = 2;
 //Adding API key to the variable, removing space from the start and the end of city variable and assigning API endpoint to the url variable
 let apiKey = 'xxxxxx';
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
